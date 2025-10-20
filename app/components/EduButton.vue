@@ -21,6 +21,7 @@
 				: 'cursor-pointer bg-gray-900 text-white hover:bg-gray-800',
 			$attrs.class,
 		]"
+		v-bind="$attrs"
 	>
 		<UIcon v-if="icon" :name="icon" />
 		<slot v-if="!label"> Bouton </slot>
@@ -35,6 +36,7 @@
 				? 'cursor-not-allowed border-gray-200 text-gray-400'
 				: 'cursor-pointer text-gray-900 hover:border-gray-200',
 		]"
+		v-bind="$attrs"
 	>
 		<slot v-if="!label"> Bouton </slot>
 		<p v-else>{{ label }}</p>
