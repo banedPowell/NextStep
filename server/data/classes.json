@@ -1,0 +1,11 @@
+[
+	{ "id": 0, "name": "Seconde" },
+	{
+		"id": 1,
+		"name": "Première"
+	},
+	{
+		"id": 2,
+		"name": "Terminale"
+	}
+]

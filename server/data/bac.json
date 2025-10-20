@@ -1,0 +1,14 @@
+[
+	{
+		"id": 0,
+		"name": "Général"
+	},
+	{
+		"id": 1,
+		"name": "Technologique"
+	},
+	{
+		"id": 2,
+		"name": "Professionnel"
+	}
+]
