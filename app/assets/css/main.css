@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@theme static {
+	--color-beige-100: #f7f3f0;
+	--color-beige-300: #eee8e4;
+
+	--font-sans: 'DM Sans', sans-serif;
+}
