@@ -1,11 +1,11 @@
 [
-	{ "id": 0, "name": "Seconde" },
+	{ "value": "seconde", "label": "Seconde" },
 	{
-		"id": 1,
-		"name": "Première"
+		"value": "premiere",
+		"label": "Première"
 	},
 	{
-		"id": 2,
-		"name": "Terminale"
+		"value": "terminale",
+		"label": "Terminale"
 	}
 ]

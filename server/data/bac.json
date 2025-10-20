@@ -1,14 +1,14 @@
 [
 	{
-		"id": 0,
-		"name": "Général"
+		"value": "general",
+		"label": "Général"
 	},
 	{
-		"id": 1,
-		"name": "Technologique"
+		"value": "technologique",
+		"label": "Technologique"
 	},
 	{
-		"id": 2,
-		"name": "Professionnel"
+		"value": "professionnel",
+		"label": "Professionnel"
 	}
 ]

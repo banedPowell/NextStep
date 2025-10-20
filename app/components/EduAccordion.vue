@@ -4,9 +4,28 @@
 		helperText?: string;
 		description?: string;
 		content?: string;
+		isOpen?: boolean;
 	}>();
 
-	const isOpen = ref(false);
+	const emit = defineEmits<{
+		'update:isOpen': [value: boolean];
+	}>();
+
+	const isOpen = ref(props.isOpen ?? false);
+
+	const toggleOpen = () => {
+		isOpen.value = !isOpen.value;
+		emit('update:isOpen', isOpen.value);
+	};
+
+	watch(
+		() => props.isOpen,
+		(newValue) => {
+			if (newValue !== undefined) {
+				isOpen.value = newValue;
+			}
+		},
+	);
 </script>
 
 <template>
@@ -26,7 +45,7 @@
 						icon="lucide-chevron-down"
 						class="transition-transform duration-300"
 						:class="[isOpen ? 'rotate-180' : '']"
-						@click="isOpen = !isOpen"
+						@click="toggleOpen"
 					/>
 				</div>
 			</div>
